@@ -13,4 +13,5 @@ outputs:
 - name: output
 
 run:
-  path: repo/ci/tasks/hello-world/task.sh
+  path: /bin/sh
+  args: ["-c", "repo/ci/tasks/hello-world/task.sh"]
