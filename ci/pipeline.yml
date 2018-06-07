@@ -1,9 +1,5 @@
 ---
 resources:
-- name: dojo-timer
-  type: time
-  source:
-    interval: 1m
 - name: repo
   type: git
   source:
