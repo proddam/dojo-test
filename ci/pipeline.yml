@@ -1,0 +1,28 @@
+---
+resources:
+- name: dojo-timer
+  type: time
+  source:
+    interval: 1m
+- name: repo
+  type: git
+  source:
+    uri: https://github.com/proddam/dojo-test
+
+jobs:
+- name: job-hello-world
+  public: true
+  plan:
+  - get: dojo-timer
+    trigger: true
+  - get: repo
+    trigger: true
+  - task: hello-world
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: busybox}
+      run:
+        path: echo
+        args: [hello dojo!]
