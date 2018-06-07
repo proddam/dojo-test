@@ -1,0 +1,10 @@
+---
+applications:
+- name: my-app
+  memory: 16M
+  disk_quota: 5M
+  instances: 1
+  buildpack: binary_buildpack
+  command: ./a.out
+  health-check-type: process
+
