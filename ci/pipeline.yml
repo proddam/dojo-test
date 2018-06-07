@@ -14,11 +14,4 @@ jobs:
   - get: repo
     trigger: true
   - task: hello-world
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source: {repository: busybox}
-      run:
-        path: echo
-        args: [hello dojo!!!!!]
+    file: repo/ci/tasks/hello-world/task.yml
