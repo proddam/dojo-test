@@ -13,8 +13,8 @@ jobs:
 - name: job-hello-world
   public: true
   plan:
-  - get: dojo-timer
-    trigger: true
+#  - get: dojo-timer
+#    trigger: false
   - get: repo
     trigger: true
   - task: hello-world
