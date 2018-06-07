@@ -8,5 +8,6 @@ if [[ -d /etc ]]; then
   find .
   echo -------------
   cat output/etc.filelisting.txt
+  sleep 360
 fi
 
