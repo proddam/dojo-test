@@ -6,11 +6,11 @@ image_resource:
   source:
     repository: busybox
 
-#inputs:
-#- name: project-src
+inputs:
+- name: repo
 
-#outputs:
-#- name: built-project
+outputs:
+- name: output
 
 run:
   path: repo/ci/tasks/hello-world/task.sh
