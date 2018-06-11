@@ -14,5 +14,7 @@ outputs:
 - name: output
 
 run:
+  params: 
+    MYVAR: ((somevalueincredhub))
   path: /bin/bash
   args: ["-c", "repo/ci/tasks/hello-world/task.sh"]

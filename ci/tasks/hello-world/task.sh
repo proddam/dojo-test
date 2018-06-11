@@ -9,5 +9,6 @@ find .
 echo -------------
 cat output/etc.filelisting.txt
 
-sleep 60
+echo $MYVAR
+
 
