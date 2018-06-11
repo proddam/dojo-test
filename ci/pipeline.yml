@@ -15,3 +15,5 @@ jobs:
     trigger: true
   - task: hello-world
     file: repo/ci/tasks/hello-world/task.yml
+    params: 
+      MYVAR: ((somevalueincredhub))
